@@ -45,7 +45,7 @@ export const docsConfig: DocsConfig = {
       ],
     },
     {
-      title: "Pages",
+      title: "Resources",
       items: [
         {
           title: "Landing",

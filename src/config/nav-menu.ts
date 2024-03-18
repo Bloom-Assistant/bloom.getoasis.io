@@ -3,10 +3,10 @@ import type { NavMenuConfig } from "@/types";
 export const navMenuConfig: NavMenuConfig = {
   infosNav: [
     {
-      title: "Pages",
+      title: "Resources",
       items: [
         {
-          title: "Landing",
+          title: "Homepage",
           href: "/landing",
           description: "A landing page template with differents sections.",
           image: "/images/examples/landing.jpg",

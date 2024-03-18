@@ -35,12 +35,9 @@ export function MainNavigationMenu() {
                       alt="Astronomy"
                       className="w-8 h-8 md:w-10 md:h-10"
                     />
-                  <div className="mb-2 mt-3 text-lg font-medium">Astronomy</div>
+                  <div className="mb-2 mt-3 text-lg font-medium">Bloom</div>
                   <p className="text-sm leading-tight text-muted-foreground">
-                    Pages and examples apps built with Astro v4.5,
-                    shadcn/ui & react js.
-                    <br />
-                    Open Source.
+                    The Chrome Extension for data tranquility
                   </p>
                 </a>
               </li>
@@ -52,7 +49,7 @@ export function MainNavigationMenu() {
           </NavigationMenuContent>
         </NavigationMenuItem>
 
-        <NavigationMenuItem>
+{/*         <NavigationMenuItem>
           <NavigationMenuTrigger>{examples.title}</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
@@ -61,7 +58,7 @@ export function MainNavigationMenu() {
               ))}
             </ul>
           </NavigationMenuContent>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
 
         <NavigationMenuItem>
           {navMenuConfig.links.map((link) => (
