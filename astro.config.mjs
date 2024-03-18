@@ -6,13 +6,11 @@ import tailwind from "@astrojs/tailwind";
 import vercel from "@astrojs/vercel/serverless";
 import icon from "astro-icon";
 import { defineConfig } from "astro/config";
-import lottie from "astro-integration-lottie";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astro-nomy.vercel.app",
+  site: "https://bloom.getoasis.io",
   integrations: [
-    lottie(),
     mdx({
       syntaxHighlight: "shiki",
       shikiConfig: {
