@@ -43,7 +43,11 @@ export function SheetMobileNav({
       </SheetTrigger>
       <SheetContent side="left" className="pr-0">
         <a href="/" className="flex items-center">
-          <Icons.logo className="mr-2 size-8" />
+            <img
+              src="https://www.dropbox.com/scl/fi/xi7ramitffhqm7q7s5dch/gobiicon.png?rlkey=8390hg1banoh1bz2sb4zs4134&dl=1"
+              alt="Astronomy"
+              className="w-8 h-8 md:w-10 md:h-10"
+            />
           <span className="font-bold">{siteConfig.name}</span>
         </a>
         <ScrollArea className="my-4 h-[calc(100vh-8rem)] pb-10 pl-10">

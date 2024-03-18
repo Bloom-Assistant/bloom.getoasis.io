@@ -30,7 +30,11 @@ export function MainNavigationMenu() {
                   className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                   href="/"
                 >
-                  <Icons.logo className="size-8" />
+                    <img
+                      src="https://www.dropbox.com/scl/fi/xi7ramitffhqm7q7s5dch/gobiicon.png?rlkey=8390hg1banoh1bz2sb4zs4134&dl=1"
+                      alt="Astronomy"
+                      className="w-8 h-8 md:w-10 md:h-10"
+                    />
                   <div className="mb-2 mt-3 text-lg font-medium">Astronomy</div>
                   <p className="text-sm leading-tight text-muted-foreground">
                     Pages and examples apps built with Astro v4.5,
