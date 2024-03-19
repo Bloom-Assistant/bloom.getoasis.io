@@ -7,7 +7,7 @@ export const GET: APIRoute = async () => {
   const waiting = await db
     .select({ count: sql<number>`count(*)`.mapWith(Number) })
     .from(WaitingList);
-
+  
   if (!waiting) {
     return new Response(
       JSON.stringify({
