@@ -14,7 +14,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const {
   title,
   description = siteConfig.description,
-  image = "/og.jpg",
+  image = "/og.png",
 } = Astro.props;
 ---
 
@@ -37,8 +37,8 @@ const {
 <link rel="canonical" href={canonicalURL} />
 
 <!-- Primary Meta Tags -->
-<title>{title ? `${title} | Astronomy` : "Astronomy"}</title>
-<meta name="title" content={title ? `${title} | Astronomy` : "Astronomy"} />
+<title>{title ? `${title} | Bloom` : "Bloom"}</title>
+<meta name="title" content={title ? `${title} | Bloom` : "Bloom"} />
 <meta name="description" content={description} />
 
 <!-- Open Graph / Facebook -->
@@ -54,7 +54,7 @@ const {
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
-
+<script src="https://getlaunchlist.com/js/widget.js" defer></script>
 <!-- Dark mode with prevent flickering flash between navigations -->
 <script is:inline>
 const setDarkMode = () => {

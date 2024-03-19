@@ -1,0 +1,36 @@
+---
+import MainLayout from "@/layouts/main-layout.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<MainLayout
+  title="Waitlist"
+  description="A waiting list page with form using Astro DB."
+  mainClass="bg-background-200"
+>
+  <div class="relative flex w-full min-h-svh items-center justify-center">
+    <div
+      class="px-4 py-5 sm:p-6 bg-background border rounded-xl overflow-hidden -mt-36"
+    >
+      <div class="flex flex-col gap-y-4 w-full max-w-sm">
+        <div class="space-y-3">
+            <img
+            src="https://www.dropbox.com/scl/fi/xi7ramitffhqm7q7s5dch/gobiicon.png?rlkey=8390hg1banoh1bz2sb4zs4134&dl=1"
+            alt="Bloom"
+            class="w-8 h-8 md:w-8 md:h-8"
+          />
+          <h1 class="text-2xl font-heading tracking-wide">Get early access!</h1>
+          <p class="text-sm text-muted-foreground">
+            Excited to join the waitlist?
+            <br />
+            Fill out the form below to secure your spot and be the first to know
+            when we launch!
+            <br />
+          </p>
+        </div>
+
+        <div class="launchlist-widget" data-key-id="L0RJaF" data-height="180px"></div>
+      </div>
+    </div>
+  </div>
+</MainLayout>

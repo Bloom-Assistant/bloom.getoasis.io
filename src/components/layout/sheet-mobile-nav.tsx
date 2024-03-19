@@ -45,7 +45,7 @@ export function SheetMobileNav({
         <a href="/" className="flex items-center">
             <img
               src="https://www.dropbox.com/scl/fi/xi7ramitffhqm7q7s5dch/gobiicon.png?rlkey=8390hg1banoh1bz2sb4zs4134&dl=1"
-              alt="Astronomy"
+              alt="Bloom"
               className="w-8 h-8 md:w-10 md:h-10"
             />
           <span className="font-bold">{siteConfig.name}</span>

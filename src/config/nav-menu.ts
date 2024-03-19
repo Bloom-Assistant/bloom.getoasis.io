@@ -7,21 +7,21 @@ export const navMenuConfig: NavMenuConfig = {
       items: [
         {
           title: "Homepage",
-          href: "/landing",
-          description: "A landing page template with differents sections.",
+          href: "/",
+          description: "The Chrome Extension for data tranquility",
           image: "/images/examples/landing.jpg",
         },
         {
           title: "Changelog",
           href: "/releases",
-          description: "A reproduction of Starlog template with Tailwind CSS.",
+          description: "Stay up to date with the latest changes.",
           image: "/images/examples/changelog.jpg",
         },
         {
           title: "Waitlist",
           href: "/waitlist",
           description:
-            "A waiting list page with form using Astro DB, React Hook Form & Sonner.",
+            "Join the waitlist to be the first to know when we launch.",
           image: "/images/examples/waitlist.jpg",
           forceReload: true,
         },

@@ -5,9 +5,9 @@ export const siteConfig: SiteConfig = {
   description:
     "The Chrome extension that will lead your team to data tranquility. 🧘🏽‍♂️",
   url: "https://bloom.getoasis.io",
-  ogImage: "https://astro-nomy.vercel.app/og.jpg",
+  ogImage: "https://bloom.getoasis.io/og.png",
   links: {
     twitter: "https://twitter.com/getbloom",
-    github: "https://github.com/mickasmt/astro-nomy",
+    github: "https://gethub.com/getbloom",
   },
 };

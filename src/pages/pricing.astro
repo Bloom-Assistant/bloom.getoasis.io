@@ -3,6 +3,7 @@ import { buttonVariants } from "@/components/ui/button";
 import MainLayout from "@/layouts/main-layout.astro";
 import { cn } from "@/lib/utils";
 import { Icon } from "astro-icon/components";
+import { toast } from "sonner";
 ---
 
 <MainLayout title="Pricing" mainClass="flex-1 bg-background-200">
@@ -16,7 +17,7 @@ import { Icon } from "astro-icon/components";
       <p
         class="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
       >
-        Unlock all features including unlimited posts for your blog.
+        Unlock data tranquility with our simple pricing model.
       </p>
     </div>
     <div
@@ -24,46 +25,48 @@ import { Icon } from "astro-icon/components";
     >
       <div class="grid gap-6">
         <h3 class="text-xl font-bold sm:text-2xl">
-          What&apos;s included in the PRO plan
+          The Data Tranqulity Plan
         </h3>
         <ul class="grid gap-3 text-sm text-muted-foreground sm:grid-cols-2">
           <li class="flex items-center">
-            <Icon name="lucide:check" class="mr-2 size-4" /> Unlimited Posts
+            <Icon name="lucide:check" class="mr-2 size-4" /> 14-day free trial
           </li>
           <li class="flex items-center">
-            <Icon name="lucide:check" class="mr-2 size-4" /> Unlimited Users
+            <Icon name="lucide:check" class="mr-2 size-4" /> 
           </li>
 
           <li class="flex items-center">
-            <Icon name="lucide:check" class="mr-2 size-4" /> Custom domain
+            <Icon name="lucide:check" class="mr-2 size-4" /> CRM Integrations
           </li>
           <li class="flex items-center">
-            <Icon name="lucide:check" class="mr-2 size-4" /> Dashboard Analytics
+            <Icon name="lucide:check" class="mr-2 size-4" />1200 Prompts
           </li>
           <li class="flex items-center">
-            <Icon name="lucide:check" class="mr-2 size-4" /> Access to Discord
+            <Icon name="lucide:check" class="mr-2 size-4" /> Warehouse Integrations (Add On)
           </li>
           <li class="flex items-center">
-            <Icon name="lucide:check" class="mr-2 size-4" /> Premium Support
+            <Icon name="lucide:check" class="mr-2 size-4" />24/7 Support
           </li>
         </ul>
       </div>
       <div class="flex flex-col gap-4 text-center">
         <div>
-          <h4 class="text-7xl font-bold">$19</h4>
+          <h4 class="text-7xl font-bold">$75</h4>
           <p class="text-sm font-medium text-muted-foreground">
+            Per User
+          </p>
+          <p class="text-xs font-medium text-muted-foreground">
             Billed Monthly
           </p>
         </div>
-        <a href="/login" class={cn(buttonVariants({ size: "lg" }))}>
-          Get Started
-        </a>
+<!--         <a href="https://buy.stripe.com/3csbKD9t24mM6C4bII" class={cn(buttonVariants({ size: "lg" }))}>
+          Show Pre-Love ❤️
+        </a> -->
       </div>
     </div>
     <div class="mx-auto flex w-full max-w-[58rem] flex-col gap-4">
       <p class="max-w-[85%] leading-normal text-muted-foreground sm:leading-7">
-        Astronomy is a demo app.{" "}
-        <strong>You can test the upgrade and won&apos;t be charged.</strong>
+        We'll be launching soon, so stay in touch via the changelog if you're curious about trying Bloom{" "}
       </p>
     </div>
   </section>
