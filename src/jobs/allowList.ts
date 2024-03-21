@@ -6,7 +6,7 @@ import { clerkClient, setClerkApiKey } from '@clerk/clerk-sdk-node';
 
 const stripe = new Stripe({
   id: "stripe",
-  apiKey: "sk_test_51Ow9oTJfa7ajJzhmlSSRiPAXFJTHnjF9f8l8sv7u1RpCBstfz00SnbvNqrluqle0HYoSvrpLHMBuJkwYSFrwTf4C00E8ffi5Lw"!,
+  apiKey: import.meta.env.STRIPE_API_KEY!,
 });
 
 // Your first job
@@ -20,7 +20,7 @@ client.defineJob({
   trigger: stripe.onCheckoutSessionCompleted(),
 run: async (payload, io, ctx) => {
     // Use a Task to generate a random number. Using a Tasks means it only runs once.
-    setClerkApiKey(process.env.CLERK_API_KEY!);
+    setClerkApiKey(import.meta.env.CLERK_API_KEY!);
 
     const allowlistIdentifier = await clerkClient.allowlistIdentifiers.createAllowlistIdentifier({
             identifier: payload.metadata?.email as string,
