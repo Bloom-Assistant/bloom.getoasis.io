@@ -6,7 +6,7 @@ import type { APIRoute } from "astro";
 // If you are using an endpoint defined with the API or dashboard, look in your webhook settings
 // at https://dashboard.stripe.com/webhooks
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || '');
-const clerkClient = Clerk({ secretKey: 'sk_test_kzzE1nMNSBDNTcpcyi2b67nDqwdyqIVISTw2Yypeps' });
+const clerkClient = Clerk({ secretKey: '' });
 
 const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
 
