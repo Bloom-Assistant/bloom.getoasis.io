@@ -21,12 +21,11 @@ client.defineJob({
 run: async (payload, io, ctx) => {
     // Use a Task to generate a random number. Using a Tasks means it only runs once.
     setClerkApiKey(import.meta.env.CLERK_API_KEY!);
-
-    const allowlistIdentifier = await clerkClient.allowlistIdentifiers.createAllowlistIdentifier({
-            identifier: payload.metadata?.email as string,
-            notify: false,
-        });
-
+    await
+    clerkClient.allowlistIdentifiers.createAllowlistIdentifier({
+        identifier: payload.metadata?.email as string,
+        notify: true,
+    });
     await io.logger.info(
         "✨ Congratulations, You just ran your first successful Trigger.dev Job! ✨"
     );
