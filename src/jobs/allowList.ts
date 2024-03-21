@@ -1,12 +1,14 @@
 import { eventTrigger } from "@trigger.dev/sdk";
 import { client } from "../trigger";
 import { Stripe } from "@trigger.dev/stripe";
-import Clerk from '@clerk/clerk-sdk-node/esm/instance';
+import 'dotenv/config';
+import { clerkClient, setClerkApiKey } from '@clerk/clerk-sdk-node';
 
 const stripe = new Stripe({
   id: "stripe",
   apiKey: "sk_test_51Ow9oTJfa7ajJzhmlSSRiPAXFJTHnjF9f8l8sv7u1RpCBstfz00SnbvNqrluqle0HYoSvrpLHMBuJkwYSFrwTf4C00E8ffi5Lw"!,
 });
+
 // Your first job
 // This Job will be triggered by an event, log a joke to the console, and then wait 5 seconds before logging the punchline.
 client.defineJob({
@@ -18,8 +20,7 @@ client.defineJob({
   trigger: stripe.onCheckoutSessionCompleted(),
 run: async (payload, io, ctx) => {
     // Use a Task to generate a random number. Using a Tasks means it only runs once.
-    const clerkClient = Clerk({ secretKey: "sk_test_kzzE1nMNSBDNTcpcyi2b67nDqwdyqIVISTw2Yypeps" });
-    const clientList = await clerkClient.clients.getClientList();
+    setClerkApiKey(process.env.CLERK_API_KEY!);
 
     const allowlistIdentifier = await clerkClient.allowlistIdentifiers.createAllowlistIdentifier({
             identifier: payload.metadata?.email as string,
