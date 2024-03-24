@@ -8,6 +8,6 @@ export const siteConfig: SiteConfig = {
   ogImage: "https://bloom.getoasis.io/og.png",
   links: {
     twitter: "https://twitter.com/getbloom",
-    github: "https://gethub.com/getbloom",
+    github: "https://github.com/getbloom",
   },
 };

@@ -1,6 +1,8 @@
 ---
 import MainLayout from "@/layouts/main-layout.astro";
 import { Icon } from "astro-icon/components";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 ---
 
 <MainLayout
@@ -19,17 +21,24 @@ import { Icon } from "astro-icon/components";
             alt="Bloom"
             class="w-8 h-8 md:w-8 md:h-8"
           />
-          <h1 class="text-2xl font-heading tracking-wide">Get early access!</h1>
+          <h1 class="text-2xl font-heading tracking-wide">Join the Launch Squad!</h1>
           <p class="text-sm text-muted-foreground">
-            Excited to join the waitlist?
+            Does this sound exciting?
+            Join the Bloomers Slack to tap into our launch squad and get early access to updates and secret content. 
             <br />
-            Fill out the form below to secure your spot and be the first to know
-            when we launch!
+            <br />
+            When launch day comes, we'll need your help to make this project a success!
             <br />
           </p>
         </div>
 
-        <div class="klaviyo-form-WKzRg7"></div>
+        <a
+        href="/pricing"
+        class={cn(buttonVariants({ variant: "outline", size: "lg" }), "px-4")}
+      >
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Slack_icon_2019.svg/2048px-Slack_icon_2019.svg.png" class="mr-2 size-5" />
+        Join the Bloomers Slack
+      </a>
       </div>
     </div>
   </div>
