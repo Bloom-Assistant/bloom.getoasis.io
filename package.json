@@ -21,6 +21,7 @@
     "@clerk/backend": "^0.38.3",
     "@clerk/clerk-sdk-node": "^4.13.11",
     "@hookform/resolvers": "^3.3.4",
+    "@hubspot/api-client": "^11.1.0",
     "@iconify-json/lucide": "^1.1.174",
     "@iconify-json/mdi": "^1.1.64",
     "@iconify-json/ri": "^1.1.20",
@@ -60,6 +61,7 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.51.0",
     "sharp": "^0.33.2",
+    "snowflake-sdk": "^1.10.0",
     "sonner": "^1.4.3",
     "stripe": "^14.21.0",
     "svix": "^1.21.0",
@@ -71,6 +73,7 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
+    "@types/snowflake-sdk": "^1.6.20",
     "mdast-util-toc": "^7.0.0",
     "remark": "^15.0.1",
     "unist-util-visit": "^5.0.0"
